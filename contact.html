@@ -18,6 +18,9 @@
             border: 3px solid white;
             transition: transform 0.6s ease;
         }
+        h2{
+            font-size: 15px;
+        }
 
     .navbar-brand:hover{
   transform: rotate(360deg);
@@ -40,10 +43,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Homepage</a>
+              <a class="nav-link " aria-current="page" href="index.html">Homepage</a>
               <a class="nav-link" href="artist.html">Artists</a>
-              <a class="nav-link" href="#">Playlists</a>
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="playlist.html">Playlists</a>
+              <a class="nav-link active" href="contact.html">Contact</a>
           
             </div>
           </div>
@@ -56,9 +59,13 @@
 
 
 
+<h1 class="text-center mb-2">
+    CONTACT US
+</h1>
 
-
-
+<h2 class="text-center">
+    Please enter your details to report a problem and our customer service will reply to your issue shortly.
+</h2>
 
 
 
@@ -67,13 +74,13 @@
             <div class="col-sm-6">
 <form class="ms-2">
     <label for="firstName">First Name</label><br />
-    <input type="text"placeholder="Jane"id="firstName"class="p-2 mb-3"><br />
+    <input type="text"placeholder="Jane"id="firstName"class="p-2 mb-3"required><br />
     <label for="lastName">Last Name</label><br />
-    <input type="text"placeholder="Smitherton"id="lastName"class="p-2 mb-3"><br />
+    <input type="text"placeholder="Smitherton"id="lastName"class="p-2 mb-3"required><br />
     <label for="emailText">Email Address</label><br />
-    <input type="email"placeholder="emails@jane.fake.domain.net"id="emailText"class="p-2 mb-3"><br />
+    <input type="email"placeholder="emails@jane.fake.domain.net"id="emailText"class="p-2 mb-3"required><br />
     <label for="inputMessage">Your message</label><br />
-    <input type="text" name="message"placeholder="Enter your question or message"id="inputMessage"class="p-5 mb-3"><br />
+    <input type="text" name="message"placeholder="Enter your question or message"id="inputMessage"class="p-5 mb-3"required><br />
     <input type="submit"value="SUBMIT"class="btn bg-dark text-light"><br />
 </form>
             </div>
