@@ -15,25 +15,33 @@
     <title>Document</title>
     <style>
         .bar-color{
-            background-color: pink;
+            background-color: black;
         }
         .section-style{
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             border-radius: 4px;
+        }
+        .section-style ul{
+            font-size: 10px;
         }
         ul{
             list-style: none;
         }
+    
+        a{
+            text-decoration: none;
+            color:white;
+        }
         body{
             font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   font-style: normal;
         }
         .heading{
             font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight:500px;
+  font-weight: 500px;
   font-style: normal;
         }
         .mini-heading{
@@ -50,10 +58,10 @@
         .image-editing{
             height: 200px;
         }
+        .artist-songs{
+            list-style-type: disc;
+        }
 @media (max-width: 576px) {
-    .navbar{
-        display: none;
-    }
     .image-editing{
         height: 150px;
     }
@@ -63,12 +71,45 @@
 <body>
 
     <div class="row mb-3">
+        <div class="col-sm-1 bar-color d-flex flex-column text-center d-sm-block d-none">
+            <div>
+           <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/233/original/The_girl_in_color_light.jpeg?1714638941" alt="" class="img-fluid mt-2 mb-2 w-100 height-auto ms-1 me-1 rounded-circle border" />
+        </div>
+        <div class="text-center mt-2 mb-3">
+            <span class="svg-spinners--blocks-scale"></span>
+            <a href="index.html">Homepage</a>
+        </div>
+    
+        <div class="text-center mt-3 mb-3">
+            <i class="fa-solid fa-compact-disc fa-2xl" style="color: #B197FC;"></i>
+            <a href="index.html">Playlists</a>
+        </div>
+    
+        <div class="text-center mt-3 mb-5">
+            <i class="fa-solid fa-grip fa-2xl" style="color: #B197FC;"></i>
+            <a href="index.html">Contact Us</a>
+        </div>
+    
+    
+    
+    
+    
+        <div class="text-center mt-5 ">
+            <i class="fa-solid fa-right-to-bracket fa-2xl" style="color: #B197FC;"></i>
+            <button>Sign out</button>
+        </div>
+    
+    </div>
       
+<div class="col-sm-11">
+<div class="row">
+
+
 
 <div class="col-sm-12">
-    <form >
-        <input type="text"placeholder="Artist">
-        <input type="submit"value="SEARCH">
+    <form class="text-center" >
+        <input type="text"placeholder="Artist"class="pt-2 pb-2 ps-5 pe-5 ">
+        <input type="submit"value="SEARCH" class="bg-dark text-light btn ps-3 pe-3 pt-2 pb-2">
     </form>
 </div>
 
@@ -83,7 +124,7 @@
     <h2 class="heading">
         SONGS
     </h2>
-    <ul>
+    <ul class="artist-songs">
 <li>
 WAP
 </li>
@@ -135,7 +176,7 @@ WAP
 
 
 
-       <div class="col-sm-12  d-flex text-center ms-1 me-1 justify-content-evenly">
+       <div class="col-sm-12  d-flex text-center ms-1 me-1 justify-content-evenly mt-4">
         <div class="col-sm-3  section-style ms-1 me-1 shadow-lg">
             <h2 class="mini-heading">
                 Similar Artists
@@ -179,6 +220,9 @@ WAP
     
     
 
+</div>
+</div>
+</div>
 
 
 
